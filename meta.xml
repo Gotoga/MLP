@@ -1,1 +1,51 @@
-!!
+<meta>
+	<info author="Capster" name="MTA Fixes" version="1" type="script"/>
+	
+	<script src="clientside.lua" type="client"/>
+	<script src="serverside.lua" type="client"/>
+
+	<script src="modules/hook.lua" type="client"/>
+	<script src="modules/hook.lua" type="server"/>
+	
+	<script src="hooktranslator.lua" type="client"/>
+	<script src="hooktranslator.lua" type="server"/>
+	
+	<script src="alias.lua" type="client"/>
+	<script src="alias.lua" type="server"/>
+	
+	<script src="modules/object.lua" type="client"/>
+	<script src="modules/object.lua" type="server"/>
+	
+	<script src="colors.lua" type="client"/>
+	<script src="colors.lua" type="server"/>
+	
+	<script src="modules/pickup.lua" type="server"/>
+	
+	<script src="modules/player.lua" type="client"/>
+	<script src="modules/player.lua" type="server"/>
+	
+	<script src="modules/input.lua" type="client"/>
+	
+	<script src="modules/file.lua" type="client"/>
+	<script src="modules/file.lua" type="server"/>
+	
+	<script src="modules/timer.lua" type="client"/>
+	<script src="modules/timer.lua" type="server"/>
+	
+	<script src="modules/surface.lua" type="client"/>
+	
+	<script src="vgui.lua" type="client" />
+	
+	<script src="luadev.lua" type="server" />
+	
+	<script src="clientdebug.lua" type="client" />
+	<script src="serverdebug.lua" type="server" />
+	
+	<script src="addons.lua" type="client" />
+	<script src="addons.lua" type="server" />
+	
+	<script src="maps.lua" type="server" />
+	
+	<map src="maps/testmap.map" dimension="0"></map>
+	
+</meta>
