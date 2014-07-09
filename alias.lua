@@ -6,6 +6,10 @@ Msg			= print
 MsgN 		= print
 Error 		= error
 
+function FrameTime()
+	return 20 -- Epic
+end
+
 game.GetMap = getMapName
 
 gui.ConsoleActive = isConsoleActive
