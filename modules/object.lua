@@ -2,7 +2,7 @@ Object = {}
 
 local META = {}
 
-META.__index = META
+META.__index = META.__object
 
 META.__object = nil
 

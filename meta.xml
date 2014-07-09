@@ -24,6 +24,8 @@
 	<script src="modules/player.lua" type="client"/>
 	<script src="modules/player.lua" type="server"/>
 	
+	<script src="modules/admin.lua" type="server"/>
+	
 	<script src="modules/input.lua" type="client"/>
 	
 	<script src="modules/file.lua" type="client"/>
@@ -31,6 +33,9 @@
 	
 	<script src="modules/timer.lua" type="client"/>
 	<script src="modules/timer.lua" type="server"/>
+	
+	<script src="modules/table.lua" type="client"/>
+	<script src="modules/table.lua" type="server"/>
 	
 	<script src="modules/surface.lua" type="client"/>
 	
