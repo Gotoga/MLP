@@ -21,17 +21,11 @@ end
 
 function hook.Call(strType, ...)
 	if hooks[strType] then
-		for k, fn in pairs(hooks[strType]) do
-			local t = getTickCount()
-			
-			local ret = {fn(...)}
-
-			if (getTickCount() - t) > 0.2 then
-				print("Warning! Hook", strType, k, " has been running for " .. (getTickCount() - t) .. " seconds")
-			end
-
-			if #ret>0 then
-				return unpack(ret)
+		for strName, funcCallback in pairs(hooks[strType]) do
+			local s, res = xpcall(funcCallback, nil, ...)
+			if not s then
+				hooks[strType][strName] = nil
+				print("[Hook] "..tostring(strType).." -> "..tostring(strName).." removed with error: "..tostring(res))
 			end
 		end
 	end
