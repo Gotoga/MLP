@@ -32,11 +32,3 @@ function hook.Call(strType, ...)
 end
 
 hook.Run = hook.Call
-
-function hook.Panic()
-	for global,v in pairs(hook.GetTable()) do
-		for _, name in pairs(v) do
-			hook.Remove(global, name)
-		end
-	end
-end
